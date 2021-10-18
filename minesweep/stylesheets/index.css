@@ -1,0 +1,46 @@
+.game {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: aqua;
+    width: 360px;
+    height: 355px;
+    display: flex;
+}
+
+.row {
+    height: 32px;
+    width: 360px;
+}
+
+.row > div .tile {
+    align-items: center;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border: 3px solid black;
+    border-left-style: outset;
+}
+
+.tile.revealed {
+    border-style: inset;
+}
+
+.tile.bombed {
+    border-style: outset;
+}
+
+.tile > span {
+    display: block;
+    margin-left: 25%;
+    margin-top: 35%;
+}
+
+.row .tile.bombed > span {
+    display: none;
+}
+
+.red > span {
+    display: block;
+}

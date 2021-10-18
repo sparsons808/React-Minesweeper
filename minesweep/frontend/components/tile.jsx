@@ -26,7 +26,7 @@ class Tile extends React.Component {
 
         if (this.props.tile.bombed) {
             text = <span id="bombed">&#128163;</span>
-            classes += "bombed"
+            classes += " bombed"
         } else if (this.props.tile.explored) {
             let numBombs = this.props.tile.adjacentBombCount();
             text = <span>{numBombs}</span>
